@@ -1,0 +1,5 @@
+C:\EventProject\EventsProject\ServicesLayer\obj\Release\net6.0\ServicesLayer.csproj.AssemblyReference.cache
+C:\EventProject\EventsProject\ServicesLayer\obj\Release\net6.0\ServicesLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\EventProject\EventsProject\ServicesLayer\obj\Release\net6.0\ServicesLayer.AssemblyInfoInputs.cache
+C:\EventProject\EventsProject\ServicesLayer\obj\Release\net6.0\ServicesLayer.AssemblyInfo.cs
+C:\EventProject\EventsProject\ServicesLayer\obj\Release\net6.0\ServicesLayer.csproj.CoreCompileInputs.cache
