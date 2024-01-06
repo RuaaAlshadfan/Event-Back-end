@@ -1,1 +1,1 @@
-# Pharmaky
+# Event app
