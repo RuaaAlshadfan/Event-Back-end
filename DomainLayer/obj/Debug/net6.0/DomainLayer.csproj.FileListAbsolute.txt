@@ -1,0 +1,36 @@
+C:\EventProject\EventsProject\DomainLayer\bin\Debug\net6.0\DomainLayer.deps.json
+C:\EventProject\EventsProject\DomainLayer\bin\Debug\net6.0\DomainLayer.dll
+C:\EventProject\EventsProject\DomainLayer\bin\Debug\net6.0\DomainLayer.pdb
+C:\EventProject\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.csproj.AssemblyReference.cache
+C:\EventProject\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\EventProject\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.AssemblyInfoInputs.cache
+C:\EventProject\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.AssemblyInfo.cs
+C:\EventProject\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.csproj.CoreCompileInputs.cache
+C:\EventProject\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.dll
+C:\EventProject\EventsProject\DomainLayer\obj\Debug\net6.0\refint\DomainLayer.dll
+C:\EventProject\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.pdb
+C:\EventProject\EventsProject\DomainLayer\obj\Debug\net6.0\ref\DomainLayer.dll
+C:\Users\Alshadafan\Desktop\EventsProject\DomainLayer\bin\Debug\net6.0\DomainLayer.deps.json
+C:\Users\Alshadafan\Desktop\EventsProject\DomainLayer\bin\Debug\net6.0\DomainLayer.dll
+C:\Users\Alshadafan\Desktop\EventsProject\DomainLayer\bin\Debug\net6.0\DomainLayer.pdb
+C:\Users\Alshadafan\Desktop\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.csproj.AssemblyReference.cache
+C:\Users\Alshadafan\Desktop\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alshadafan\Desktop\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.AssemblyInfoInputs.cache
+C:\Users\Alshadafan\Desktop\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.AssemblyInfo.cs
+C:\Users\Alshadafan\Desktop\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.csproj.CoreCompileInputs.cache
+C:\Users\Alshadafan\Desktop\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.dll
+C:\Users\Alshadafan\Desktop\EventsProject\DomainLayer\obj\Debug\net6.0\refint\DomainLayer.dll
+C:\Users\Alshadafan\Desktop\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.pdb
+C:\Users\Alshadafan\Desktop\EventsProject\DomainLayer\obj\Debug\net6.0\ref\DomainLayer.dll
+C:\Users\Alshadafan\Desktop\New folder\EventsProject\DomainLayer\bin\Debug\net6.0\DomainLayer.deps.json
+C:\Users\Alshadafan\Desktop\New folder\EventsProject\DomainLayer\bin\Debug\net6.0\DomainLayer.dll
+C:\Users\Alshadafan\Desktop\New folder\EventsProject\DomainLayer\bin\Debug\net6.0\DomainLayer.pdb
+C:\Users\Alshadafan\Desktop\New folder\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.csproj.AssemblyReference.cache
+C:\Users\Alshadafan\Desktop\New folder\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alshadafan\Desktop\New folder\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.AssemblyInfoInputs.cache
+C:\Users\Alshadafan\Desktop\New folder\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.AssemblyInfo.cs
+C:\Users\Alshadafan\Desktop\New folder\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.csproj.CoreCompileInputs.cache
+C:\Users\Alshadafan\Desktop\New folder\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.dll
+C:\Users\Alshadafan\Desktop\New folder\EventsProject\DomainLayer\obj\Debug\net6.0\refint\DomainLayer.dll
+C:\Users\Alshadafan\Desktop\New folder\EventsProject\DomainLayer\obj\Debug\net6.0\DomainLayer.pdb
+C:\Users\Alshadafan\Desktop\New folder\EventsProject\DomainLayer\obj\Debug\net6.0\ref\DomainLayer.dll
