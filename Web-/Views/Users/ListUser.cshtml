@@ -1,0 +1,68 @@
+﻿@model List<Web.Models.User.UserModel>
+@{
+    ViewBag.Title = "List";
+}
+<style>
+    .modal-lg {
+        max-width: 80%;
+    }
+</style>
+<button type="button" class="btn btn-outline-dark" style="background-color:DodgerBlue;" onclick="@("window.location.href='" + @Url.Action("CreateUser", "Users") + "'");">
+Create</button>
+<a href="@Url.Action("List", "Home")" class="btn btn-secondary" style={"width:150px; font-family: Times New Roman, Times, serif;"}}"> Back to Home</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $('#UserTable').DataTable();
+</script>
+<div class="container p-3">
+    <div class="col-6">
+        <h3 class="text-primary">User List</h3>
+        <hr />
+    </div>
+    <div class="col-6 text-end">
+        <a asp-controller="Users" asp-action="CreateUser" class="btn bnt-primary">
+            <i class="bi bi-plus-ciricle"></i>
+        </a>
+    </div>
+</div>
+<br /><br />
+<table class="table table-bordered table-striped" id="UserTable" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Emailaddress
+            </th>
+            <th>
+                Password
+            </th>
+            <th>
+                MobileNumber
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+    <tr>
+        <td wideth="50">
+        @item.Name
+        <td wideth="50">
+          @item.Emailaddress
+        </td>
+        <td wideth="50">
+          @item.Password
+        </td>
+         <td wideth="50">
+          @item.MobileNumber
+        </td>
+        <td>
+           <a asp-action="EditUser" asp-route-id="@item.Id">Update</a> |
+           <a asp-action="DetailUser" asp-route-id="@item.Id">Details</a> |
+           <a asp-action="DeleteUser" asp-route-id="@item.Id">Delete</a> 
+        </td>
+    </tr>
+    }
+    </tbody>
+</table>

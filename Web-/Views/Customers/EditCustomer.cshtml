@@ -1,0 +1,30 @@
+﻿    @model Web.Models.Customer.CustomerModel
+
+<form method="post" action="@Url.Action("UpdateCustomer","Customers")">
+    <div class="border p-3 mt-4">
+      @Html.HiddenFor(t=> t.Id)
+        <div class="row pb-2">
+            <h2 class="text-primary">Edit Customers</h2>
+            <hr />
+        </div>
+    </div>
+        <label for="Name">Name</label><br />
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    <br />
+        <label for="Age">Age</label><br />
+        @Html.TextBoxFor(m => m.Age, new { @class = "form-control" })
+    <br />
+        <label for="MobileNumber">MobileNumber</label><br />
+        @Html.TextBoxFor(m => m.MobileNumber, new { @class = "form-control" })
+    <br />
+        <label for="NumberOfPeople">NumberOfPeople</label><br />
+        @Html.TextBoxFor(m => m.NumberOfPeople, new { @class = "form-control" })
+    <br />
+    <label for="Note">Note</label><br />
+        @Html.TextBoxFor(m => m.Note, new { @class = "form-control" })
+    <br />
+    <button type="submit" value="save" class="btn btn-primary" style="width:150px">Update</button>
+    <a asp-controller="Customers" asp-action="ListCustomer" class="btn btn-secondary" style="width:150px">
+        Back to List
+    </a>
+</form>

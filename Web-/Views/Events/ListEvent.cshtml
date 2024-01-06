@@ -1,0 +1,69 @@
+﻿@model List<Web.Models.Event.EventModel>
+@{
+    ViewBag.Title = "List";
+}
+<style>
+    .modal-lg {
+        max-width: 80%;
+    }
+</style>    
+<button type="button" class="btn btn-outline-dark" style="background-color:DodgerBlue;" onclick="@("window.location.href='" + @Url.Action("CreateEvent", "Events") + "'");">Create</button>
+<a href="@Url.Action("List", "Home")" class="btn btn-secondary" style={"width:150px; font-family: Times New Roman, Times, serif;"> Back to Home</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+   $('#EventTable').DataTable();
+</script>
+<div class="container p-3">
+    <div class="col-6">
+        <h3 class="text-primary">Event List</h3> 
+        <hr />
+    </div>
+    <div class="col-6 text-end">
+        <a asp-controller="Events" asp-action="CreateEvent" class="btn bnt-primary">
+            <i class="bi bi-plus-ciricle"></i>
+        </a>
+    </div>
+</div>
+<br />
+<br />
+<table class="table table-bordered table-striped"id="EventTable" style="width:100%">
+    <thead>
+        <tr>
+            <td>
+                Name
+            </td>
+            <td>
+                Description
+            </td>
+            <td>
+              From
+            </td>
+            <td>
+              To
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td wideth="50">
+                    @item.Name
+                <td wideth="50">
+                        @item.Description
+                </td>
+                <td wideth="50">
+                        @item.From
+                </td>
+                <td wideth="50">
+                        @item.To
+                </td>
+                <td>
+                    <a asp-action="EditEvent" asp-route-id="@item.Id">Update</a> |
+                    <a asp-action="DetailEvent" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="DeleteEvent" asp-route-id="@item.Id">Delete</a> 
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

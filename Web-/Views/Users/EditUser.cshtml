@@ -1,0 +1,30 @@
+﻿  @model Web.Models.User.UserModel
+ 
+
+<form method="post" action="@Url.Action("UpdateUser","Users")">
+    <div class="border p-3 mt-4">
+      @Html.HiddenFor(t=> t.Id)
+        <div class="row pb-2">
+            <h2 class="text-primary">Edit Users</h2>
+            <hr />
+        </div>
+    </div>
+    
+        <label for="Name">Name</label><br />
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    <br />
+        <label for="Emailaddress">Emailaddress</label><br />
+        @Html.TextBoxFor(m => m.Emailaddress, new { @class = "form-control" })
+    <br />
+        <label for="Password">Password</label><br />
+        @Html.TextBoxFor(m => m.Password, new { @class = "form-control" })
+    <br />
+        <label for="MobileNumber">MobileNumber</label><br />
+        @Html.TextBoxFor(m => m.MobileNumber, new { @class = "form-control" })
+    <br />
+    <button type="submit" value="save" class="btn btn-primary" style="width:150px">Update</button>
+    <a asp-controller="Users" asp-action="ListUser" class="btn btn-secondary" style="width:150px">
+        Back to List
+    </a>
+</form>
+

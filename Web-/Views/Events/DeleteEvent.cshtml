@@ -1,0 +1,45 @@
+﻿@model Web.Models.Event.EventModel
+@{
+    ViewData["Title"] = "Delete Event";
+}
+<h2>@ViewData["Title"]</h2>
+
+<form action="@Url.Action("DeleteEvent","Events")">
+   
+         <input type="hidden" id="Id"/>
+
+    <h3>Are you sure you want to delete?</h3>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.From)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.From)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.To)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.To)
+            </dd>
+        </dl>
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" />
+            <a asp-action="ListEvent" class="btn btn-info">Back to List</a>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,28 @@
+﻿@model Web.Models.Role.RoleModel
+
+
+<form method="post" action="@Url.Action("UpdateRole","Roles")">
+    <div class="border p-3 mt-4">
+      @Html.HiddenFor(t=> t.Id)
+        <div class="row pb-2">
+            <h2 class="text-primary">Edit Roles</h2>
+            <hr />
+        </div>
+    </div>
+    <div class="from-group">
+        <label class="control-label">User</label>
+        @Html.DropDownList("UserId", new SelectList(Model.UserList,"Id","DisplayName"), Model.UserId.ToString(), new { @class = "form-control" })
+        
+    </div>
+        <label for="Name">Name</label><br />
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    <br />
+        <label for="Description">Description</label><br />
+        @Html.TextBoxFor(m => m.Description, new { @class = "form-control" })
+    <br />
+     
+    <button type="submit" value="save" class="btn btn-primary" style="width:150px">Update</button>
+    <a asp-controller="Roles" asp-action="ListRole" class="btn btn-secondary" style="width:150px">
+        Back to List
+    </a>
+</form>

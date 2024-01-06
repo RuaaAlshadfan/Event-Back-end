@@ -1,0 +1,44 @@
+﻿@model Web.Models.User.UserModel
+@{
+    ViewData["Title"] = "Detail User";
+}
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" action="@Url.Action("DetailUser","Users")">
+   
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Emailaddress)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Emailaddress)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.MobileNumber)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.MobileNumber)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Password)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Password)
+            </dd>
+            
+        </dl>
+
+
+        <div class="form-actions no-color">
+            <a asp-action="ListUser" class="btn btn-info">Back to List</a>
+        </div>
+    </div>
+</form>

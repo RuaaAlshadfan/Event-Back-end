@@ -1,0 +1,38 @@
+﻿@model Web.Models.User.UserModel
+
+<form method="post" action="@Url.Action("CreateUser","Users")">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Create Users</h2>
+            <hr />
+        </div>
+
+        <div class="mb-3">
+            <label for="Name">Name</label><br />
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @required="required" })
+        </div>
+        <br />
+        <div class="mb-3">
+            <label for="Emailaddress">Emailaddress</label><br />
+            @Html.TextBoxFor(m => m.Emailaddress, new { @class = "form-control", @required="required" })
+        </div>
+        <br />
+        <div class="mb-3">
+            <label for="Password">Password</label><br />
+            @Html.TextBoxFor(m => m.Password, new { @class = "form-control", @required="required" })
+        </div>
+        <br />
+        <div class="mb-3">
+            <label for="MobileNumber">MobileNumber</label><br />
+            @Html.TextBoxFor(m => m.MobileNumber, new { @class = "form-control", @required="required", @pattern="[0-9]{10}"})
+        </div>
+        <br />
+        <button type="submit" value="save" class="btn btn-primary" style="width:150px">Create</button>
+        <a asp-controller="Users" asp-action="ListUser" class="btn btn-secondary" style="width:150px">
+            Back to List
+        </a>
+    </div>
+</form>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

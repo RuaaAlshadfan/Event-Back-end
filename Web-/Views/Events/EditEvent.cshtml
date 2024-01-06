@@ -1,0 +1,33 @@
+﻿@model Web.Models.Event.EventModel
+
+
+<form method="post" action="@Url.Action("UpdateEvent","Events")">
+    <div class="border p-3 mt-4">
+      @Html.HiddenFor(t=> t.Id)
+        <div class="row pb-2">
+            <h2 class="text-primary">Edit Events</h2>
+            <hr />
+        </div>
+    </div>
+    <div class="from-group">
+        <label class="control-label">User</label>
+        @Html.DropDownList("UserId", new SelectList(Model.UserList,"Id","DisplayName"), Model.UserId.ToString(), new { @class = "form-control" })
+        
+    </div>
+        <label for="Name">Name</label><br />
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    <br />
+        <label for="Description">Description</label><br />
+        @Html.TextBoxFor(m => m.Description, new { @class = "form-control" })
+    <br />
+        <label for="From">From</label><br />
+        @Html.TextBoxFor(m => m.From, new { @class = "form-control" })
+    <br />
+        <label for="To">To</label><br />
+        @Html.TextBoxFor(m => m.To, new { @class = "form-control" })
+    <br />
+    <button type="submit" value="save" class="btn btn-primary" style="width:150px">Update</button>
+    <a asp-controller="Events" asp-action="ListEvent" class="btn btn-secondary" style="width:150px">
+        Back to List
+    </a>
+</form>

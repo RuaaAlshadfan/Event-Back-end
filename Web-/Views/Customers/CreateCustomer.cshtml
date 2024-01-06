@@ -1,0 +1,43 @@
+﻿@model Web.Models.Customer.CustomerModel
+
+<form method="post" action="@Url.Action("CreateCustomer","Customers")">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Create Customers</h2>
+            <hr />
+        </div>
+
+        <div class="mb-3">
+            <label for="Name">Name</label><br />
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @required="required" })
+        </div>
+        <br />
+        <div class="mb-3">
+            <label for="Age">Age</label><br />
+            @Html.TextBoxFor(m => m.Age, new { @class = "form-control", @required="required" })
+        </div>
+        <br />
+        <div class="mb-3">
+            <label for="MobileNumber">MobileNumber</label><br />
+            @Html.TextBoxFor(m => m.MobileNumber, new { @class = "form-control", @required="required", @pattern="[0-9]{10}" })
+        </div>
+        <br />
+        <div class="mb-3">
+            <label for="NumberOfPeople">NumberOfPeople</label><br />
+            @Html.TextBoxFor(m => m.NumberOfPeople, new { @class = "form-control", @required="required" })
+        </div>
+        <br />
+        <div class="mb-3">
+            <label for="Note">Note</label><br />
+            @Html.TextBoxFor(m => m.Note, new { @class = "form-control", @required="required", @maxlength="400" })
+        </div>
+        <br />
+        <button type="submit" value="save" class="btn btn-primary" style="width:150px">Create</button>
+        <a asp-controller="Customers" asp-action="ListCustomer" class="btn btn-secondary" style="width:150px">
+            Back to List
+        </a>
+    </div>
+</form>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
